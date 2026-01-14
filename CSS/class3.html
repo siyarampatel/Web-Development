@@ -1,0 +1,31 @@
+<!-- if want to move child with respect to it's parent then we will use both absolute and relative -->
+
+<html>
+    <head> 
+        <style>
+            #parent{
+                height: 400px;
+                width: 500px;
+                margin: 20px auto;
+                position: relative;
+                background-color: black;
+                border: 4px rebeccapurple;
+            }
+            #child{
+                height: 100px;
+                width: 100px;
+                background-color: silver;
+                position: absolute;
+                top: 50px;
+                left: 50px;
+                border: 3px lightcyan;
+                margin: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="parent">
+            <div id="child"></div>
+        </div>
+    </body>
+</html>
