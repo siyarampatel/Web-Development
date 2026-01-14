@@ -1,40 +1,39 @@
-<!-- transitions -->
- <html>
+<html>
     <head>
         <style>
-         #parent{
+            #parent{
             height: 500px;
             width: 1500px;
             border: 4px solid black;
-            position: relative;
         }
         .one{
             height: 100px;
             width: 100px;
             border-radius: 50%;
-            margin: 20px;
+            margin: 20px; 
             transition: margin-left 1.5s;
-          
         }
-        
         #one{
-            background-color: rgb(73, 102, 126);
+            background-color: blue;
             transition-timing-function:linear;
+             
         }
         #two{
-            background-color: rgb(135, 95, 42);
+            background-color: blueviolet;
             transition-timing-function:step-end;
         }
         #three{
-            background-color: rgb(123, 244, 244);
+            background-color: brown;
             transition-timing-function:ease-out;
         }
         #four{
-            background-color: rgb(136, 120, 100);
+            background-color: aqua;
+            transition-timing-function:ease-out;
         }
+        /* when hover over parent move child's of one class to left */
         #parent:hover .one{
-            margin-left: 200px;
-        }  
+            margin-left: 1380px;
+        }
         </style>
     </head>
     <body>
@@ -45,4 +44,4 @@
             <div id="four" class="one"></div>
         </div>
     </body>
- </html>
+</html>
