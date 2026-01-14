@@ -1,0 +1,38 @@
+<!-- changing positions of div's via different properties relative and absolute -->
+<html>
+    <head>
+    <style>
+        div{
+            height: 200px;
+            width: 200px;
+            margin: 10px;
+            border: 3px;
+            display: inline-block;
+        }
+        /* we can use different tags for one tag(here div) */
+        #one{
+            background-color: aquamarine;
+            position: relative;
+            top: 20px;
+            /* form top 20px down  */
+        }
+        #two{
+            background-color: blueviolet;
+            position: relative;
+            left: 40px;
+            /* from left to right 40 pixel */
+        }
+        #three{
+            background-color: brown;
+            position: relative;
+            top: 100px;
+        }
+    </style>
+
+    </head>
+    <body>
+        <div id="one" >one</div>
+        <div id="two">two</div>
+        <div id="three">three</div>
+    </body>
+</html>
