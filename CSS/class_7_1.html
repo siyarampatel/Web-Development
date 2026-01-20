@@ -1,0 +1,49 @@
+<!-- other properties of animations -->
+    <head>
+        <style>
+            div{
+                height: 200px;
+                width: 200px;
+                background-color: palegoldenrod;
+                animation-iteration-count: infinite;
+            }
+            div:hover{
+                animation-name: ani;
+                animation-duration: 5s;
+            }
+
+           @keyframes ani{
+            0%{
+                background-color: antiquewhite;
+                height: 200px;
+                width: 200px;
+            }
+            25%{
+                background-color: rgb(135, 127, 116);
+                height: 300px;
+                width: 300px;
+            }
+            50%{
+                background-color: rgb(133, 104, 66);
+                height: 400px;
+                width: 400px;
+            }
+            75%{
+                background-color: rgb(107, 107, 107);
+                height: 500px;
+                width: 500px;
+            }
+            100%{
+                background-color: rgb(5, 3, 2);
+                height: 600px;
+                width: 600px;
+            }
+           }
+        </style>
+    </head>
+    <body>
+        <div>
+
+        </div>
+    </body>
+</html>
