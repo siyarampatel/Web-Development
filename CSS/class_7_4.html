@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <style>
+            .linear{
+                height: 200px;
+                width: 200px;
+                background:linear-gradient(blue,red);
+                /* by default top to bottom  */
+                background:linear-gradient(to right ,blue,red);
+                background:linear-gradient(to left ,blue,red);
+
+                background:linear-gradient(30deg,blue,red);
+
+                background:linear-gradient(blue,red,green);
+            }
+            .radial{
+                height: 200px;
+                width: 200px;
+                background:radial-gradient(orange,yellow);
+                background:radial-gradient(circle,orange,yellow);
+                background:radial-gradient(circle at top,orange,yellow);
+
+            }
+            .conic{
+                height: 200px;
+                width: 200px;
+                background:conic-gradient(blue,purple);
+                background:conic-gradient(from 90deg,blue,purple);
+
+            }
+        </style>
+    </head>
+    <body>
+        <div class="linear"></div>
+        <div class="radial"></div>
+        <div class="conic"></div>
+    </body>
+</html>
