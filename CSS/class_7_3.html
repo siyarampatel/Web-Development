@@ -1,0 +1,71 @@
+<!-- Flying baloons animation -->
+
+<html>
+    <head>
+        <style>
+            .container{
+                width: 1000px;
+                height: 700px;
+                margin: auto;
+            }
+            .text{
+                font-size: 40px;
+                color: red;
+                position: absolute;
+                top: 20px;
+                left: 500px;
+                width: 100%;
+            }
+            .sun{
+                height: 100px;
+                width: 100px;
+                border-radius:50%;
+                background-color: yellow;
+                position: absolute;
+                top: 20px;
+                right: 30px;
+            }
+            .sky{
+                width: 1000px;
+                height: 600px;
+                background:linear-gradient(rgb(20, 190, 228),white);
+                position: relative;
+            }
+            .green{
+                width: 1000px;
+                height:100px ;
+                background-color: rgb(44, 181, 23);
+                
+            }
+            .baloon{
+                height: 100px;
+                width: 70px;
+                background-color: red;
+                border-radius: 50%;
+                animation-name: baloon;     
+                animation-duration: 3s;   
+                animation-iteration-count: infinite;
+                position: absolute;
+                bottom: 0;
+            }
+            @keyframes baloon{
+                from{
+                     transform: translateY(0);
+                }
+                to{
+                    transform: translateY(-500px) ;
+                }
+            }
+        </style>
+    </head>
+    <body>
+    <div class="container">
+        <div class="sky">
+            <div class="sun"></div>
+            <div class="baloon"></div>
+        </div>
+        <div class="green"></div>
+        <div class="text">Welcome to Balloon Festival</div>
+    </div>
+</body>
+</html>
