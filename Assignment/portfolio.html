@@ -1,0 +1,149 @@
+
+<!-- portfolio(resume) website -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Siyaram Patel | Portfolio</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50 text-gray-800 scroll-smooth">
+
+<nav class="fixed w-full bg-white shadow-md z-50">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+    <h1 class="text-xl font-bold text-blue-600">Siyaram Patel</h1>
+
+    <ul class="hidden md:flex space-x-8 font-medium">
+      <li><a href="#home" class="hover:text-blue-600">Home</a></li>
+      <li><a href="#about" class="hover:text-blue-600">About</a></li>
+      <li><a href="#projects" class="hover:text-blue-600">Projects</a></li>
+      <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+    </ul>
+
+    <button id="menu-btn" class="md:hidden text-2xl">☰</button>
+  </div>
+
+ 
+  <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-3 bg-white">
+    <a href="#home" class="block">Home</a>
+    <a href="#about" class="block">About</a>
+    <a href="#projects" class="block">Projects</a>
+    <a href="#contact" class="block">Contact</a>
+  </div>
+</nav>
+
+
+<section id="home" class="min-h-screen flex items-center justify-center pt-24 px-6 bg-gradient-to-br from-blue-50 to-white">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+
+    <!-- Text -->
+    <div>
+      <h2 class="text-lg text-blue-600 mb-2">Hello, I'm</h2>
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">Siyaram Patel</h1>
+      <h3 class="text-xl text-gray-600 mb-6">Student | Java & Frontend Developer</h3>
+      <p class="text-gray-600 mb-6">
+        I am a student from Jabalpur currently learning Data Structures & Algorithms in Java 
+        along with Frontend Development. I am passionate about improving my problem-solving 
+        skills and building real-world web applications.
+      </p>
+      <a href="#contact" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">
+        Available for Internship
+      </a>
+    </div>
+
+  
+    <div class="flex justify-center">
+      <img src="profile.jpg" alt="Siyaram Patel"
+        class="w-72 h-72 object-cover rounded-full shadow-lg border-4 border-blue-600">
+    </div>
+
+  </div>
+</section>
+
+<section id="about" class="py-20 px-6">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-6">About Me</h2>
+    <p class="text-gray-600 mb-8">
+      I am currently focusing on mastering DSA in Java and strengthening my frontend skills. 
+      I enjoy solving algorithmic problems and building responsive web interfaces. 
+      My goal is to become a strong software developer with solid problem-solving ability 
+      and practical development experience.
+    </p>
+
+    <div class="grid md:grid-cols-3 gap-6 text-center">
+      <div class="bg-white p-6 shadow rounded-lg">
+        <h3 class="font-bold text-lg mb-2">DSA in Java</h3>
+        <p class="text-gray-600">Learning core data structures and algorithms.</p>
+      </div>
+
+      <div class="bg-white p-6 shadow rounded-lg">
+        <h3 class="font-bold text-lg mb-2">Frontend Development</h3>
+        <p class="text-gray-600">HTML, CSS, Tailwind & basic JavaScript.</p>
+      </div>
+
+      <div class="bg-white p-6 shadow rounded-lg">
+        <h3 class="font-bold text-lg mb-2">Problem Solving</h3>
+        <p class="text-gray-600">Improving logic and coding efficiency.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="projects" class="py-20 bg-gray-100 px-6">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-12">Projects</h2>
+
+    <div class="bg-white p-8 rounded-lg shadow-md">
+      <h3 class="text-2xl font-bold mb-4">Library Management System</h3>
+      <p class="text-gray-600 mb-4">
+        A Java-based Library Management System that helps manage book records, 
+        issue and return functionality, and user data efficiently.
+      </p>
+      <a href="https://github.com/siyarampatel" target="_blank"
+         class="text-blue-600 font-medium hover:underline">
+         View on GitHub →
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<section id="contact" class="py-20 px-6">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-6">Contact Me</h2>
+    <p class="text-gray-600 mb-8">Feel free to reach out for internships or collaboration.</p>
+
+    <div class="space-y-4 text-lg">
+      <p><strong>Email:</strong> siyarampateljbp@gmail.com</p>
+      <p><strong>Phone:</strong> 9770428829</p>
+      <p>
+        <strong>GitHub:</strong> 
+        <a href="https://github.com/siyarampatel" class="text-blue-600 hover:underline" target="_blank">
+          github.com/siyarampatel
+        </a>
+      </p>
+      <p><strong>Location:</strong> Jabalpur, India</p>
+      <p class="text-green-600 font-semibold">Available for Internship</p>
+    </div>
+  </div>
+</section>
+
+
+<footer class="text-center py-6 bg-white border-t">
+  © 2026 Siyaram Patel | Portfolio
+</footer>
+
+<script>
+const btn = document.getElementById('menu-btn');
+const menu = document.getElementById('mobile-menu');
+btn.addEventListener('click', () => {
+  menu.classList.toggle('hidden');
+});
+</script>
+
+</body>
+</html>
