@@ -1,3 +1,17 @@
+let h1 = document.querySelector("h1")
+let h2 = document.querySelector("h2")
+let data = JSON.parse(localStorage.getItem("data"))
+console.log(data,"data")
+if(data){
+    h1.innerText = data.name
+    h2.innerText = data.email
+}
+
+let btn = document.querySelector("#bt");
+btn.addEventListener("click",(e)=>{
+        localStorage.removeItem("data")
+})
+
 
 let form = document.querySelector("#formData");
 form.addEventListener("submit",(e)=>{
